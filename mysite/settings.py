@@ -25,7 +25,7 @@ SECRET_KEY = 'zzo%eny*7cpec=(f++1m!v2a9&=%siyfmw(=tauuh9@b!v1+lh'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['kpollsapp.herokuapp.com']
 
 
 # Application definition
@@ -121,5 +121,8 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATIC_ROOT = os.path.join((BASE_DIR), 'static')
 
 STATIC_URL = '/static/'

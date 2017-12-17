@@ -25,7 +25,7 @@ SECRET_KEY = 'zzo%eny*7cpec=(f++1m!v2a9&=%siyfmw(=tauuh9@b!v1+lh'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['kul21blog.herokuapp.com']
+ALLOWED_HOSTS = ['kul21blog.herokuapp.com', '127.0.0.1' ]
 
 
 # Application definition
@@ -94,8 +94,8 @@ DATABASES = {
 		
     }
 }
-"""
 
+"""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -153,4 +153,5 @@ DATABASES['default'].update(db_from_env)
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "static"),]
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage' 
+#STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage' 
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'

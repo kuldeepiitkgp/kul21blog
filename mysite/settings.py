@@ -25,7 +25,7 @@ SECRET_KEY = 'zzo%eny*7cpec=(f++1m!v2a9&=%siyfmw(=tauuh9@b!v1+lh'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['kpollsapp.herokuapp.com']
+ALLOWED_HOSTS = ['k4pollsapp.herokuapp.com']
 
 
 # Application definition

@@ -82,7 +82,6 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-"""
 
 DATABASES = {
     'default': {
@@ -95,8 +94,19 @@ DATABASES = {
 		
     }
 }
+"""
 
-
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'dbblstq8t41fnv',
+		'HOST': 'ec2-54-235-244-185.compute-1.amazonaws.com',
+		'USER': 'fmfaspmlmjpuug',
+		'PASSWORD': 'a1c18a83ad5aa1b1224b3e608d4e3a24fb172bbc782f2754b1ece902a4f2cae6',
+		'PORT':'5432',
+		
+    }
+}
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
 
